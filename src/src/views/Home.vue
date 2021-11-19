@@ -57,7 +57,7 @@
             </b-col>
 
             <b-col cols="4" sm="6">
-              <img src="@/assets/Hello.png" />
+              <img src="@/assets/Hello.png" style="max-width: 100%"/>
             </b-col>
           </b-row>
         </b-col>
