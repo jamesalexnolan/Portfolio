@@ -1,16 +1,13 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+ 
     <router-view />
   </div>
 </template>
 
 <style>
 #app {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto-Regular, Roboto-Bold, sans-serif;
   src: local("Roboto-Regular, Roboto-Bold"),
     url(../src/fonts/Roboto-Regular.ttf) format("truetype"),
     url(../src/fonts/Roboto-Bold.ttf) format("truetype");
