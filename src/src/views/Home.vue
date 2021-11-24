@@ -28,7 +28,7 @@
             shadow
           >
             <div class="px-3 py-2">
-              <b-form-group>
+              <b-form-group style="text-align: center">
                 <router-link to="/">Home</router-link>
                 <br />
                 <router-link to="/about">About</router-link>
@@ -36,10 +36,10 @@
             </div>
           </b-sidebar>
         </div>
-        <div style="padding: 150px">
-          <h1 style="float: left"><b>James Nolan.</b></h1>
-          <hr class="solid" style="border-top: 5px solid black; width: 450px" />
-          <p style="float: left; text-align: left">
+        <div style="padding: 150px;">
+          <h1><b>James Nolan.</b></h1>
+          <hr class="break" />
+          <p style="padding-top: 11px;">
             Qualified London-based UX/UI designer.<br /><br />
             I have a passion for building simple and captivating digital
             products, with an emphasis on the intended user, working from
@@ -47,23 +47,15 @@
             Skilled in HTML, CSS, JS, VUE.JS and Figma
           </p>
 
-          <hr
-            class="solid"
-            style="border-top: 5px solid black; width: 450px; padding-top: 3px"
-          />
+          <hr class="break" />
 
           <br />
 
           <b-breadcrumb
-            style="
-              display: inline-block;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            "
+            class="links"
           >
             <b-breadcrumb-item
-              href="#https://www.linkedin.com/in/james-alexander-nolan"
+              href="https://www.linkedin.com/in/james-alexander-nolan"
             >
               <b-icon
                 icon="linkedin"
@@ -73,7 +65,7 @@
               ></b-icon>
             </b-breadcrumb-item>
 
-            <b-breadcrumb-item href="#https://github.com/jamesalexnolan">
+            <b-breadcrumb-item href="https://github.com/jamesalexnolan">
               <b-icon
                 icon="github"
                 scale="4"
@@ -82,7 +74,7 @@
               ></b-icon>
             </b-breadcrumb-item>
 
-             <b-breadcrumb-item a href=mailto:jamesnolan1@hotmail.com>
+            <b-breadcrumb-item a href="mailto:jamesnolan1@hotmail.com">
               <b-icon
                 icon="Envelope"
                 scale="4"
@@ -127,5 +119,28 @@ export default {
 <style scoped>
 .breadcrumb > li + li:before {
   content: "";
+}
+
+.break {
+  width: 450px;
+  height: 5px;
+  margin: auto;
+  border: black;
+  background-color: black;
+  opacity: 1;
+}
+
+.solid{
+  opacity: 1;
+}
+
+.links {
+   align-items: center;
+              justify-content: center;
+              margin: auto;
+              top: 50%;
+              left: 77%;
+              padding: 10px;
+              transform: translate(0%, 10%);
 }
 </style>

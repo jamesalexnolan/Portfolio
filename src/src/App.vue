@@ -13,7 +13,6 @@
     url(../src/fonts/Roboto-Bold.ttf) format("truetype");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #000000;
 }
 
