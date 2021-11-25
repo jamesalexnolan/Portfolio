@@ -29,37 +29,39 @@
           >
             <div class="px-3 py-2">
               <b-form-group style="text-align: center">
-                <router-link to="/">Home</router-link>
+                <router-link to="/"><b>Home</b></router-link>
+                <hr class="break-menu" />
+                <router-link to="/about"><b>About</b></router-link>
+                <hr class="break-menu" />
                 <br />
-                <router-link to="/about">About</router-link>
+                <p style="font-size: 20px">Projects</p>
+                <hr class="break-menu" />
               </b-form-group>
             </div>
           </b-sidebar>
         </div>
-        <div style="padding: 150px;">
+        <div style="margin-top: 150px; margin-left: 90px">
           <h1><b>James Nolan.</b></h1>
           <hr class="break" />
-          <p style="padding-top: 11px;">
-            Qualified London-based UX/UI designer.<br /><br />
+          <p style="padding-top: 11px">
+            Qualified London-based UX/UI designer and Front end developer.<br /><br />
             I have a passion for building simple and captivating digital
             products, with an emphasis on the intended user, working from
             ideation to iteration.<br /><br />
-            Skilled in HTML, CSS, JS, VUE.JS and Figma
+            Skilled in <b>HTML</b>, <b>CSS</b>,<b> JS</b>, <b>VUE.JS </b>and <b>Figma </b>
           </p>
 
           <hr class="break" />
 
           <br />
 
-          <b-breadcrumb
-            class="links"
-          >
+          <b-breadcrumb class="links">
             <b-breadcrumb-item
               href="https://www.linkedin.com/in/james-alexander-nolan"
             >
               <b-icon
                 icon="linkedin"
-                scale="4"
+                scale="3"
                 shift-h="10"
                 aria-hidden="true"
               ></b-icon>
@@ -68,7 +70,7 @@
             <b-breadcrumb-item href="https://github.com/jamesalexnolan">
               <b-icon
                 icon="github"
-                scale="4"
+                scale="3"
                 shift-h="70"
                 aria-hidden="true"
               ></b-icon>
@@ -77,7 +79,7 @@
             <b-breadcrumb-item a href="mailto:jamesnolan1@hotmail.com">
               <b-icon
                 icon="Envelope"
-                scale="4"
+                scale="3"
                 shift-h="120"
                 aria-hidden="true"
               ></b-icon>
@@ -130,17 +132,31 @@ export default {
   opacity: 1;
 }
 
-.solid{
+.break-menu {
+  width: 120px;
+  height: 5px;
+  margin: auto;
+  border: black;
+  background-color: black;
+  opacity: 1;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.solid {
   opacity: 1;
 }
 
 .links {
-   align-items: center;
-              justify-content: center;
-              margin: auto;
-              top: 50%;
-              left: 77%;
-              padding: 10px;
-              transform: translate(0%, 10%);
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 77%;
+  padding: 10px;
+  margin-right: 110px;
 }
 </style>
